@@ -1,0 +1,30 @@
+{
+  "name": "supervisorduty",
+  "version": "1.0.0",
+  "description": "Checks supervisor status and raises a pager duty alert",
+  "main": "index.js",
+  "dependencies": {
+    "inquirer": "0.11.3",
+    "pagerduty": "0.0.3",
+    "shelljs": "0.5.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "setup": "node setup.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/siddharthkp/supervisorduty"
+  },
+  "keywords": [
+    "supervisor",
+    "pagerduty"
+  ],
+  "author": "siddharthkp",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/siddharthkp/supervisorduty/issues"
+  },
+  "homepage": "https://github.com/siddharthkp/supervisorduty"
+}
