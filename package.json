@@ -11,7 +11,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
-    "setup": "node setup.js"
+    "setup": "node setup.js",
+    "postinstall": "npm run setup"
   },
   "repository": {
     "type": "git",

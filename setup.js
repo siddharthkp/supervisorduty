@@ -13,8 +13,12 @@ var questions = [
 ];
 
 inquirer.prompt(questions, function(answers) {
-    fs.writeFile('./config.json', JSON.stringify(answers), function(err) {
-      if(err) return console.log(err);
-      else console.log('Config file created');
+    fs.writeFile(__dirname + '/config.json', JSON.stringify(answers), function(err) {
+        if(err) return console.log(err);
+        else {
+            console.log('Config file created');
+	    console.log('Add the following to your cron file:');
+	    console.log('*/15 * * * * node ' + __dirname + ' & npm start');
+	}
     });
 });
