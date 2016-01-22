@@ -1,6 +1,6 @@
 {
   "name": "supervisorduty",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Checks supervisor status and raises a pager duty alert",
   "main": "index.js",
   "dependencies": {
